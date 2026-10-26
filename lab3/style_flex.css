@@ -17,19 +17,16 @@ h1 {
     font-size: 28px;
 }
 
-/* Flex-контейнер: колонки переносяться на новий рядок (wrap) */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-/* Flex-item (колонка) сам є flex-контейнером, щоб картка розтягувалась на всю висоту рядка */
 .flex-item {
     display: flex;
 }
 
-/* Картка: flex-контейнер у стовпчик. Без position: caption вирівнюється вправо через align-self */
 .card {
     display: flex;
     flex-direction: column;
@@ -48,7 +45,7 @@ h1 {
     border-bottom: 2px solid #000;
 }
 
-.card-content {
+p {
     flex: 1;
     padding: 20px;
 }
@@ -57,7 +54,6 @@ h1 {
 .cap-2 { background-color: #d6006e; color: #fff; }
 .cap-3 { background-color: #f7c5c5; }
 
-/* Посилання перемикання: розміщені одне під одним */
 .navigation-links {
     margin-top: 30px;
 }
@@ -75,9 +71,6 @@ h1 {
     border-radius: 4px;
 }
 
-/* ===== Media queries (межі не перекриваються) ===== */
-
-/* Large devices / Desktop: > 992px */
 @media (min-width: 993px) {
     .col-lg-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
     .col-lg-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
@@ -93,7 +86,6 @@ h1 {
     .col-lg-12 { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* Medium devices / Tablet: > 768px та <= 992px */
 @media (min-width: 769px) and (max-width: 992px) {
     .col-md-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
     .col-md-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
@@ -109,7 +101,6 @@ h1 {
     .col-md-12 { flex: 0 0 100%; max-width: 100%; }
 }
 
-/* Small devices / Mobile: <= 768px */
 @media (max-width: 768px) {
     .col-sm-1 { flex: 0 0 8.3333%; max-width: 8.3333%; }
     .col-sm-2 { flex: 0 0 16.6667%; max-width: 16.6667%; }
