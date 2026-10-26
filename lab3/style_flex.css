@@ -25,19 +25,24 @@ h1 {
 
 .flex-item {
     display: flex;
+    padding: 0 10px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: #d8e6d3;
+    position: relative;
+    background-color: rgb(213 232 212);
     border: 2px solid #000;
-    margin: 20px;
+    padding: 45px 20px 20px 20px;
+    margin-bottom: 20px;
 }
 
 .caption {
-    align-self: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 6px 20px;
     font-weight: bold;
     font-size: 18px;
@@ -45,14 +50,21 @@ h1 {
     border-bottom: 2px solid #000;
 }
 
-p {
+.card p {
     flex: 1;
     padding: 20px;
 }
 
-.cap-1 { background-color: #f0a500; }
-.cap-2 { background-color: #d6006e; color: #fff; }
-.cap-3 { background-color: #f7c5c5; }
+.cap-1 { 
+    background-color: rgb(240 163 10);
+}
+.cap-2 { 
+    background-color: rgb(216 0 115); 
+    color: #fff; 
+}
+.cap-3 { 
+    background-color: rgb(250 217 213);
+}
 
 .navigation-links {
     margin-top: 30px;
