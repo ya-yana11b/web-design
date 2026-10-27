@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.bio:link { 
+    color: red; 
+}
+.bio:visited { 
+    color: darkred; 
+}
+
+.now:link { 
+    color: blue; 
+}
+.now:visited { 
+    color: darkblue; 
+}
+
+.friends:link { 
+    color: green; 
+}
+.friends:visited { 
+    color: darkgreen; 
+}
+
+.gallery:link { 
+    color: orange; 
+}
+.gallery:visited { 
+    color: darkorange; 
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    nav ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

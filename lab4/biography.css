@@ -1,0 +1,135 @@
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.back {
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a:link,
+ul li a:visited {
+    text-decoration: none;
+    background-color: blue;
+    border: 2px solid black;
+    color: white;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+}
+
+ul li a:hover {
+    background-color: magenta;
+    color: white;
+}
+
+ul li a:active {
+    background-color: yellow;
+    color: black;
+}
+
+article {
+    font-size: 1.2em;
+}
+
+article h2 {
+    font-size: 1.2em;
+}
+
+.bio-text-1 {
+    background-color: lightblue;
+    color: darkblue;
+    padding: 8px;
+}
+
+.bio-text-2 {
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 8px;
+}
+
+.bio-text-3 {
+    background-color: lightpink;
+    color: darkred;
+    padding: 8px;
+}
+
+.bio-text-4 {
+    background-color: lightyellow;
+    color: brown;
+    padding: 8px;
+}
+
+.bio-text-5 {
+    background-color: lavender;
+    color: purple;
+    padding: 8px;
+}
+
+.to-content {
+    font-weight: bold;
+}
+
+.to-top {
+    text-transform: uppercase;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.bio-grid article {
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.bio-grid article:nth-child(1) { 
+    background-color: lightblue; 
+}
+.bio-grid article:nth-child(2) { 
+    background-color: lightgreen; 
+}
+.bio-grid article:nth-child(3) { 
+    background-color: lightpink; 
+}
+.bio-grid article:nth-child(4) { 
+    background-color: lightyellow; 
+}
+.bio-grid article:nth-child(5) { 
+    background-color: lavender; 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .bio-grid article {
+        grid-column: span 6;
+    }
+
+    .bio-grid article:nth-child(5) {
+        grid-column: span 12;
+    }
+}
+
+/* Desktop (≥ 992px): 3 + 2 */
+@media (min-width: 992px) {
+    .bio-grid article {
+        grid-column: span 4;
+    }
+
+    .bio-grid article:nth-child(n+4) {
+        grid-column: span 6;
+    }
+}
